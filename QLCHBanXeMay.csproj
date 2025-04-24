@@ -47,15 +47,177 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class\KetNoi.cs" />
-    <Compile Include="Form\Menu.cs">
+    <Compile Include="form\frmBaocao.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form\Menu.Designer.cs">
+    <Compile Include="form\frmBaocao.Designer.cs">
+      <DependentUpon>frmBaocao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="form\frmChitietdondathang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form\frmChitietdondathang.Designer.cs">
+      <DependentUpon>frmChitietdondathang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="form\frmChitietHDN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form\frmChitietHDN.Designer.cs">
+      <DependentUpon>frmChitietHDN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="form\frmCongviec.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form\frmCongviec.Designer.cs">
+      <DependentUpon>frmCongviec.cs</DependentUpon>
+    </Compile>
+    <Compile Include="form\frmDondathang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form\frmDondathang.Designer.cs">
+      <DependentUpon>frmDondathang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="form\frmDongco.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form\frmDongco.Designer.cs">
+      <DependentUpon>frmDongco.cs</DependentUpon>
+    </Compile>
+    <Compile Include="form\frmHangSX.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form\frmHangSX.Designer.cs">
+      <DependentUpon>frmHangSX.cs</DependentUpon>
+    </Compile>
+    <Compile Include="form\frmHoadonnhap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form\frmHoadonnhap.Designer.cs">
+      <DependentUpon>frmHoadonnhap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="form\frmKhachhang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form\frmKhachhang.Designer.cs">
+      <DependentUpon>frmKhachhang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="form\frmMausac.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form\frmMausac.Designer.cs">
+      <DependentUpon>frmMausac.cs</DependentUpon>
+    </Compile>
+    <Compile Include="form\frmNCC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form\frmNCC.Designer.cs">
+      <DependentUpon>frmNCC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="form\frmNhanvien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form\frmNhanvien.Designer.cs">
+      <DependentUpon>frmNhanvien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="form\frmNuocSX.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form\frmNuocSX.Designer.cs">
+      <DependentUpon>frmNuocSX.cs</DependentUpon>
+    </Compile>
+    <Compile Include="form\frmPhanhxe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form\frmPhanhxe.Designer.cs">
+      <DependentUpon>frmPhanhxe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="form\frmSanpham.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form\frmSanpham.Designer.cs">
+      <DependentUpon>frmSanpham.cs</DependentUpon>
+    </Compile>
+    <Compile Include="form\frmThongke.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form\frmThongke.Designer.cs">
+      <DependentUpon>frmThongke.cs</DependentUpon>
+    </Compile>
+    <Compile Include="form\frmTinhtrang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form\frmTinhtrang.Designer.cs">
+      <DependentUpon>frmTinhtrang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="form\Menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form\Menu.Designer.cs">
       <DependentUpon>Menu.cs</DependentUpon>
     </Compile>
     <Compile Include="Class\Program.cs" />
+    <Compile Include="form\frmLoaixe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form\frmLoaixe.Designer.cs">
+      <DependentUpon>frmLoaixe.cs</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form\Menu.resx">
+    <EmbeddedResource Include="form\frmBaocao.resx">
+      <DependentUpon>frmBaocao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form\frmChitietdondathang.resx">
+      <DependentUpon>frmChitietdondathang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form\frmChitietHDN.resx">
+      <DependentUpon>frmChitietHDN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form\frmCongviec.resx">
+      <DependentUpon>frmCongviec.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form\frmDondathang.resx">
+      <DependentUpon>frmDondathang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form\frmDongco.resx">
+      <DependentUpon>frmDongco.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form\frmHangSX.resx">
+      <DependentUpon>frmHangSX.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form\frmHoadonnhap.resx">
+      <DependentUpon>frmHoadonnhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form\frmKhachhang.resx">
+      <DependentUpon>frmKhachhang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form\frmLoaixe.resx">
+      <DependentUpon>frmLoaixe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form\frmMausac.resx">
+      <DependentUpon>frmMausac.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form\frmNCC.resx">
+      <DependentUpon>frmNCC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form\frmNhanvien.resx">
+      <DependentUpon>frmNhanvien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form\frmNuocSX.resx">
+      <DependentUpon>frmNuocSX.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form\frmPhanhxe.resx">
+      <DependentUpon>frmPhanhxe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form\frmSanpham.resx">
+      <DependentUpon>frmSanpham.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form\frmThongke.resx">
+      <DependentUpon>frmThongke.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form\frmTinhtrang.resx">
+      <DependentUpon>frmTinhtrang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form\Menu.resx">
       <DependentUpon>Menu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
