@@ -22,10 +22,7 @@ namespace QLCHBanXeMay.form
         {
             Class.KetNoi.Ketnoi();
 
-
-            // Màu nền menu bên trái
-            panelMenu.BackColor = Color.FromArgb(245, 245, 255); // gần trắng, nhẹ nhàng
-
+            panelMenu.BackColor = Color.FromArgb(245, 245, 255); 
             // Duyệt qua tất cả control trong panelMenu
             foreach (Control ctrl in panelMenu.Controls)
             {
@@ -34,7 +31,6 @@ namespace QLCHBanXeMay.form
                 {
                     group.ForeColor = Color.MidnightBlue;
                     group.BackColor = Color.Transparent;
-
                     // Duyệt các nút bên trong GroupBox
                     foreach (Control btn in group.Controls)
                     {
@@ -46,17 +42,23 @@ namespace QLCHBanXeMay.form
                 }
             }
 
-            panelDanhmuc.BackColor = Color.FromArgb(245, 245, 255); // gần trắng, nhẹ nhàng
-
-                    // Duyệt các nút bên trong GroupBox
-                    foreach (Control btn in panelDanhmuc.Controls)
-                    {
-                        if (btn is Button button)
-                        {
-                            FormatButton(button);
-                        }
-                    }
+            foreach (Control btn in grbDM.Controls)
+            {
+                if (btn is Button button)
+                {
+                    FormatButton(button);
+                }
+            }
+            panelNhansu.BackColor = Color.FromArgb(245, 245, 255); 
+            foreach (Control btn in panelNhansu.Controls)
+            {
+                if (btn is Button button)
+                {
+                    FormatButton(button);
+                }
+            }
         }
+
         private void FormatButton(Button btn)
         {
             btn.FlatStyle = FlatStyle.Flat;
@@ -69,15 +71,130 @@ namespace QLCHBanXeMay.form
         }
 
 
-        private void thoátToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            panelDanhmuc.Visible = !panelDanhmuc.Visible;
-
+           grbDM.Visible = !grbDM.Visible;
+            panelNhansu.Visible = false;
         }
-}
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            panelNhansu.Visible = !panelNhansu.Visible;
+            grbDM.Visible = false;
+        }
+
+        private void button21_Click(object sender, EventArgs e)
+        {
+            frmLoaixe frmLoaixe = new frmLoaixe();
+            frmLoaixe.ShowDialog();
+        }
+
+        private void button20_Click(object sender, EventArgs e)
+        {
+            frmMausac frmMausac = new frmMausac();
+            frmMausac.ShowDialog();
+        }
+
+        private void button19_Click(object sender, EventArgs e)
+        {
+            frmDongco frmDongco = new frmDongco();
+            frmDongco.ShowDialog();
+        }
+
+        private void button18_Click(object sender, EventArgs e)
+        {
+            frmPhanhxe frmPhanhxe = new frmPhanhxe();
+            frmPhanhxe.ShowDialog();
+        }
+
+        private void button17_Click(object sender, EventArgs e)
+        {
+            frmTinhtrang frmTinhtrang = new frmTinhtrang();
+            frmTinhtrang.ShowDialog();
+        }
+
+        private void button16_Click(object sender, EventArgs e)
+        {
+            frmHangSX frmHangSX = new frmHangSX();
+            frmHangSX.ShowDialog();
+        }
+
+        private void button15_Click(object sender, EventArgs e)
+        {
+            frmNuocSX frmNuocSX = new frmNuocSX();
+            frmNuocSX.ShowDialog();
+        }
+
+        private void btnSanpham_Click(object sender, EventArgs e)
+        {
+            frmSanpham frmSanpham = new frmSanpham();
+            frmSanpham.ShowDialog();
+        }
+
+        private void button14_Click(object sender, EventArgs e)
+        {
+            frmNhanvien frmNhanvien = new frmNhanvien();
+            frmNhanvien.ShowDialog();
+        }
+
+        private void button13_Click(object sender, EventArgs e)
+        {
+            frmCongviec frmCongviec = new frmCongviec();
+            frmCongviec.ShowDialog();
+        }
+
+        private void btnKH_Click(object sender, EventArgs e)
+        {
+            frmKhachhang frmKhachhang = new frmKhachhang();
+            frmKhachhang.ShowDialog();
+        }
+
+        private void btnNCC_Click(object sender, EventArgs e)
+        {
+            frmNCC frmNCC = new frmNCC();
+            frmNCC.ShowDialog();
+        }
+
+        private void btnDSN_Click(object sender, EventArgs e)
+        {
+            frmHoadonnhap frmHoadonnhap = new frmHoadonnhap();
+            frmHoadonnhap.ShowDialog();
+        }
+
+        private void btnTaoDN_Click(object sender, EventArgs e)
+        {
+            frmTaodonnhap frmTaodonnhap = new frmTaodonnhap();
+            frmTaodonnhap.ShowDialog();
+        }
+
+        private void btnDSB_Click(object sender, EventArgs e)
+        {
+            frmDondathang frmDondathang = new frmDondathang();
+            frmDondathang.ShowDialog();
+        }
+
+        private void btnTaoDB_Click(object sender, EventArgs e)
+        {
+            frmTaodonban frmTaodonban = new frmTaodonban();
+            frmTaodonban.ShowDialog();
+        }
+
+        private void btnTK_Click(object sender, EventArgs e)
+        {
+            frmThongke frmThongke = new frmThongke();
+            frmThongke.ShowDialog();
+        }
+
+        private void btnBC_Click(object sender, EventArgs e)
+        {
+            frmBaocao frmBaocao = new frmBaocao();
+            frmBaocao.ShowDialog();
+        }
+
+        private void btnThoat_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+    }
 }

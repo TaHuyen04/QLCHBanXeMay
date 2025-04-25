@@ -137,6 +137,18 @@
     <Compile Include="form\frmSanpham.Designer.cs">
       <DependentUpon>frmSanpham.cs</DependentUpon>
     </Compile>
+    <Compile Include="form\frmTaodonban.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form\frmTaodonban.Designer.cs">
+      <DependentUpon>frmTaodonban.cs</DependentUpon>
+    </Compile>
+    <Compile Include="form\frmTaodonnhap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form\frmTaodonnhap.Designer.cs">
+      <DependentUpon>frmTaodonnhap.cs</DependentUpon>
+    </Compile>
     <Compile Include="form\frmThongke.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -210,6 +222,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="form\frmSanpham.resx">
       <DependentUpon>frmSanpham.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form\frmTaodonban.resx">
+      <DependentUpon>frmTaodonban.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form\frmTaodonnhap.resx">
+      <DependentUpon>frmTaodonnhap.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="form\frmThongke.resx">
       <DependentUpon>frmThongke.cs</DependentUpon>
