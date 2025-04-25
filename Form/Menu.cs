@@ -21,119 +21,63 @@ namespace QLCHBanXeMay.form
         private void Menu_Load(object sender, EventArgs e)
         {
             Class.KetNoi.Ketnoi();
+
+
+            // Màu nền menu bên trái
+            panelMenu.BackColor = Color.FromArgb(245, 245, 255); // gần trắng, nhẹ nhàng
+
+            // Duyệt qua tất cả control trong panelMenu
+            foreach (Control ctrl in panelMenu.Controls)
+            {
+                // Nếu là GroupBox thì xử lý riêng
+                if (ctrl is GroupBox group)
+                {
+                    group.ForeColor = Color.MidnightBlue;
+                    group.BackColor = Color.Transparent;
+
+                    // Duyệt các nút bên trong GroupBox
+                    foreach (Control btn in group.Controls)
+                    {
+                        if (btn is Button button)
+                        {
+                            FormatButton(button);
+                        }
+                    }
+                }
+            }
+
+            panelDanhmuc.BackColor = Color.FromArgb(245, 245, 255); // gần trắng, nhẹ nhàng
+
+                    // Duyệt các nút bên trong GroupBox
+                    foreach (Control btn in panelDanhmuc.Controls)
+                    {
+                        if (btn is Button button)
+                        {
+                            FormatButton(button);
+                        }
+                    }
+        }
+        private void FormatButton(Button btn)
+        {
+            btn.FlatStyle = FlatStyle.Flat;
+            btn.BackColor = SystemColors.GradientActiveCaption;  // 🎨 Màu xanh hệ thống
+            btn.ForeColor = Color.DarkSlateGray;
+            btn.Font = new Font("Arial", 9F, FontStyle.Bold);
+
+            btn.FlatAppearance.BorderSize = 0;
+            btn.FlatAppearance.MouseOverBackColor = Color.FromArgb(178, 235, 242); // hover
         }
 
-        private void loạiXeToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            frmLoaixe frmLoaixe = new frmLoaixe();
-            frmLoaixe.ShowDialog();
-        }
-
-        private void độngCơToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            frmDongco frmDongco = new frmDongco();
-            frmDongco.ShowDialog();
-        }
-
-        private void màuSắcToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            frmMausac frmMausac = new frmMausac();
-            frmMausac.ShowDialog();
-        }
-
-        private void tìnhTrạngToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            frmTinhtrang frmTinhtrang = new frmTinhtrang();
-            frmTinhtrang.ShowDialog();
-        }
-
-        private void phanhXeToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            frmPhanhxe frmPhanhxe = new frmPhanhxe();
-            frmPhanhxe.ShowDialog();
-        }
-
-        private void hãngSảnXuấtToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            frmHangSX frmHangSX = new frmHangSX();
-            frmHangSX.ShowDialog();
-        }
-
-        private void nướcSảnXuấtToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            frmNuocSX frmNuocSX = new frmNuocSX();
-            frmNuocSX.ShowDialog();
-        }
-
-        private void sảnPhẩmToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            frmSanpham frmSanpham = new frmSanpham();
-            frmSanpham.ShowDialog();
-        }
-
-        private void hóaĐơnNhậpToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            frmHoadonnhap frmHoadonnhap = new frmHoadonnhap();
-            frmHoadonnhap.ShowDialog();
-        }
-
-        private void chiTiếtHóaĐơnNhậpToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            frmChitietHDN frmChitietHDN = new frmChitietHDN();
-            frmChitietHDN.ShowDialog();
-        }
-
-        private void hóaĐơnNhậpToolStripMenuItem1_Click(object sender, EventArgs e)
-        {
-            frmDondathang frmDondathang = new frmDondathang();
-            frmDondathang.ShowDialog();
-        }
-
-        private void chiTiếtHóaĐơnNhậpToolStripMenuItem1_Click(object sender, EventArgs e)
-        {
-            frmChitietdondathang frmChitietdondathang = new frmChitietdondathang();
-            frmChitietdondathang.ShowDialog();
-        }
-
-        private void nhânViênToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            frmNhanvien frmNhanvien = new frmNhanvien();
-            frmNhanvien.ShowDialog();
-        }
-
-        private void côngViệcToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            frmCongviec frmCongviec = new frmCongviec();
-            frmCongviec.ShowDialog();
-        }
-
-        private void kháchHàngToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            frmKhachhang frmKhachhang = new frmKhachhang();
-            frmKhachhang.ShowDialog();
-        }
-
-        private void nhàCungCấpToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            frmNCC frmNCC = new frmNCC();
-            frmNCC.ShowDialog();
-        }
-
-        private void báoCáoNhậpKhoToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            frmBaocao frmBaocao = new frmBaocao();
-            frmBaocao.ShowDialog();
-        }
-
-        private void thốngKêBánHàngToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            frmThongke frmThongke = new frmThongke();
-            frmThongke.ShowDialog();
-        }
 
         private void thoátToolStripMenuItem_Click(object sender, EventArgs e)
         {
             this.Close();
         }
-    }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            panelDanhmuc.Visible = !panelDanhmuc.Visible;
+
+        }
+}
 }
