@@ -19,6 +19,54 @@ namespace QLCHBanXeMay.form
 
         private void frmCongviec_Load(object sender, EventArgs e)
         {
+            txtTenCongViec.Enabled = false;
+            btnLuu.Enabled = false;
+            btnBoqua.Enabled = false;
+            grvCongviec();
+        }
+
+        private void txtTenCongViec_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtLuongthang_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtMacongviec_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnLuu_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void grvCongviec_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void btnXoa_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnSua_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnBoqua_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnDong_Click(object sender, EventArgs e)
+        {
 
         }
     }
