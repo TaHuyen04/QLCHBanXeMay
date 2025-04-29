@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -22,6 +23,12 @@ namespace QLCHBanXeMay.form
             txtTenCongViec.Enabled = false;
             btnLuu.Enabled = false;
             btnBoqua.Enabled = false;
+
+            string sql = "SELECT * FROM tblCongviec";
+            SqlDataAdapter da = new SqlDataAdapter(sql, Class.KetNoi.Conn);
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+            grvCongviec.DataSource = dt;
 
         }
 
