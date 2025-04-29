@@ -22,7 +22,7 @@ namespace QLCHBanXeMay.form
             txtTenCongViec.Enabled = false;
             btnLuu.Enabled = false;
             btnBoqua.Enabled = false;
-            grvCongviec();
+
         }
 
         private void txtTenCongViec_TextChanged(object sender, EventArgs e)
