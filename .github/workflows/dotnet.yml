@@ -22,7 +22,7 @@ jobs:
         dotnet-version: 8.0.x
 
     - name: Build
-      run: msbuild QLCHBanXeMay/QLCHBanXeMay.csproj
+      run: dotnet build QLCHBanXeMay/QLCHBanXeMay.csproj
 
     - name: Test
       run: dotnet test
