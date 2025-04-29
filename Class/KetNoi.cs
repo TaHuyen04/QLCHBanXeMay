@@ -15,7 +15,7 @@ namespace QLCHBanXeMay.Class
         public static string Connstring;
         public static void Ketnoi()
         {
-            Connstring = "Data Source=DESKTOP-R3DMC9I;Initial Catalog=QL_BanXeMay;Integrated Security=True ";
+            Connstring = "Data Source=XUAN;Initial Catalog=QLCH_BanXeMay;Integrated Security=True ";
             Conn = new SqlConnection();
             Conn.ConnectionString = Connstring;
             Conn.Open();
